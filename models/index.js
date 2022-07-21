@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
-const ridesSchema = require('./Rides')
+const rideSchema = require('./Ride')
 const foodSchema = require('./Food')
 
-const Rides = mongoose.model('Rides', ridesSchema)
+const Ride = mongoose.model('Ride', rideSchema)
 const Food = mongoose.model('Food', foodSchema)
 
 module.exports = {
-  Rides,
+  Ride,
   Food
 }
