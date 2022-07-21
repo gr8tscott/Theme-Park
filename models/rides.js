@@ -2,7 +2,7 @@ const { Schema } = require('mongoose')
 
 const ridesSchema = new Schema(
   {
-    id: { type: Schema.Types.ObjectId },
+    id: { type: String, required: true },
     description: { type: String, required: true },
     img: { type: String, required: true },
     name: { type: String, required: true },
