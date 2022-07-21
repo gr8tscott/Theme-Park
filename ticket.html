@@ -4,25 +4,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel=“stylesheet” href=“ticket.css”>
+  <style>
+
+    body{
+      background-color: gray;
+    }
+
+    h1{
+      color: red
+    }
+
+    section{
+      color:aquamarine;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    
+  </style>
   <title>Tickets</title>
 </head>
 <body>
 
   <h1>Tickets!</h1>
-  <div class="ticket1">
-    <h3>Single Person Ticket</h3>
-    <p>Price: $150</p>
-  </div>
 
-  <div class="ticket2">
-    <h3>Family Ticket</h3>
-    <p>Price: $100 per ticket (Minimum 3 people)</p>
-  </div>
-
-  <div class="ticket3">
-    <h3>Season Ticket</h3>
-    <p>Price: $450</p>
-  </div>
+  <section>
+    <div class="ticket1">
+      <h3>Single Person Ticket</h3>
+      <p>Price: $150</p>
+    </div>
+    
+    <div class="ticket2">
+      <h3>Family Ticket</h3>
+      <p>Price: $100 per ticket</p> 
+      <p>(Minimum 3 people)</p>
+    </div>
+    
+    <div class="ticket3">
+      <h3>Season Ticket</h3>
+      <p>Price: $450</p>
+    </div>
+    
+  </section>
 
 </body>
 </html>
