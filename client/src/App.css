@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+header {
+  background-color: purple;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3em;
+}
+header nav a {
+  margin: 0 1em;
+}
+
+
+
