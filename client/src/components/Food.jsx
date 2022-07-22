@@ -1,17 +1,23 @@
 import React from 'react'
 
-const Food = () => {
+const Food = (props) => {
   return (
-    <div className='food'>
-      <div className='foodImg'>
-        <img src="" alt="" />
-       <div className='foodInfo'>
-        <h3>//food.name</h3>
-        <p>//food.description</p>
-        </div> 
+    <div className='foodCard'>
+        {
+          props.food.map((food) => (
+            <div className='food-card' key={food.id}>
+                  <h3>{food.name}</h3>
+                  <img src={food.img}/>
+                  <p>{food.location}</p>
+                
+              {food.meals.map((meal)=> (
+                <h4>{meal}</h4>
+                ))}
+            </div>
+          ))
+        }
       </div>
-    </div>
-  )
-}
+    )
+  }
 
 export default Food

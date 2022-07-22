@@ -33,7 +33,7 @@
 }
 
 header {
-  background-color: purple;
+  background-color: black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -45,12 +45,20 @@ header nav a {
 
 
 .coasterCard {
-  background-color: yellow;
-  width: 100vh;
-  height: 100vh;
+ display: flex; 
+ flex-wrap: wrap;
+ justify-content: space-around;
+ 
 }
 
 
 .ride-card{
-  background-color: yellow;
+  background-color: red;
 }
+
+.foodCard {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+   }

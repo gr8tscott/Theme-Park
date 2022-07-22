@@ -8,19 +8,22 @@ const Rides = (props) => {
       navigate(`${rides.id}`)
     }
 
-
-const Rides = () => {
-  return (
+    return (
   <div className='coasterCard'>
+    
       {
-        props.rides.map((ride) => {
+        props.rides.map((ride) => (
+        
           <div className='ride-card' onClick={()=> showRides(ride)} key={ride.id}>
                 <h3>{ride.name}</h3>
+                <p> 
+                  <img src={ride.img}/>
+                </p>
           </div>
-        })
+        ))
       }
     </div>
   )
 }
-}
+
 export default Rides
