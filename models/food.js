@@ -4,7 +4,8 @@ const foodSchema = new Schema(
   {
     location: { type: String, required: true },
     meals: { type: Array, required: true },
-    name: { type: String, required: true }
+    name: { type: String, required: true },
+    img: { type: String, required: true }
   },
   { timestamps: true }
 )

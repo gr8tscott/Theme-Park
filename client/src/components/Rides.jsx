@@ -10,10 +10,15 @@ const Rides = (props) => {
 
     return (
   <div className='coasterCard'>
+    
       {
         props.rides.map((ride) => (
+        
           <div className='ride-card' onClick={()=> showRides(ride)} key={ride.id}>
                 <h3>{ride.name}</h3>
+                <p> 
+                  <img src={ride.img}/>
+                </p>
           </div>
         ))
       }

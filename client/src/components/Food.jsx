@@ -7,11 +7,12 @@ const Food = (props) => {
           props.food.map((food) => (
             <div className='food-card' key={food.id}>
                   <h3>{food.name}</h3>
+                  <img src={food.img}/>
                   <p>{food.location}</p>
                 
-              {/* {props.meals.map((meal)=> (
-               <h2>{meal}</h2>
-              ))} */}
+              {food.meals.map((meal)=> (
+                <h4>{meal}</h4>
+                ))}
             </div>
           ))
         }
