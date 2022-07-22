@@ -18,9 +18,8 @@ const main = async () => {
 
     {
       id: '2',
-      description:
-        'https://allears.net/wp-content/uploads/2019/08/Space-Mountain-Halloween-Overlay-5-Mickeys-Not-So-Scary-Halloween-Party-MNSSHP.jpg',
-      img: 'blank image',
+      description: 'Coolest Ride Ever',
+      img: "https://allears.net/wp-content/uploads/2019/08/Space-Mountain-Halloween-Overlay-5-Mickeys-Not-So-Scary-Halloween-Party-MNSSHP.jpg'",
       name: 'Space Mountain',
       speed: '200mph',
       minHeight: '54in'
