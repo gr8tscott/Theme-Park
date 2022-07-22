@@ -23,6 +23,11 @@ app.get('/ride', async (req, res) => {
   const ride = await Ride.find({})
   res.json(ride)
 })
+app.get('/rides/:id', async (req, res) => {
+  const { id } = req.params
+  const ride = await Ride.find({ id: id })
+  res.json(ride)
+})
 
 // server.js
 app.get('/food', async (req, res) => {
